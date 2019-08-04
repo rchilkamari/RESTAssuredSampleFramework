@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [restAssuredtestSuite]">
+  <listeners>
+    <listener class-name="com.Employeeapi.utilities.Listeners"/>
+  </listeners>
+  <test name="EmployeerestAssuredTest(failed)">
+    <classes>
+      <class name="com.Employeeapi.testCases.TC_001_GET_All_Employees">
+        <methods>
+          <include name="CheckContentLength"/>
+          <include name="getAllEmployees"/>
+          <include name="checkServerType"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Employeeapi.testCases.TC_001_GET_All_Employees -->
+      <class name="com.Employeeapi.testCases.TC_003_POST_Employee_Record">
+        <methods>
+          <include name="CreateEmployee"/>
+          <include name="CheckResponseBody"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Employeeapi.testCases.TC_003_POST_Employee_Record -->
+      <class name="com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record">
+        <methods>
+          <include name="CheckContentEncoding"/>
+          <include name="CheckResponseBody"/>
+          <include name="getAllEmployees"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record -->
+    </classes>
+  </test> <!-- EmployeerestAssuredTest(failed) -->
+</suite> <!-- Failed suite [restAssuredtestSuite] -->

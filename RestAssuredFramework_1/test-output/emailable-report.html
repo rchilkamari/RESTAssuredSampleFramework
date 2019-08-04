@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">EmployeerestAssuredTest</td><td class="numi">19</td><td class="numi">19</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">8.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">EmployeerestAssuredTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m1"><b>CheckContentEncoding</b>  </a></td><td class="numi">1</td><td>1562011223540</td><td class="numi">1</td></tr>
+<tr class="failedeven"><td rowspan="1">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m2"><b>CheckContentLength</b>  </a></td><td class="numi">1</td><td>1562011223166</td><td class="numi">4</td></tr>
+<tr class="failedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m3"><b>CheckResponseBody</b>  </a></td><td class="numi">1</td><td>1562011223548</td><td class="numi">2</td></tr>
+<tr class="failedeven"><td rowspan="1">com.Employeeapi.testCases.TC_003_POST_Employee_Record</td><td><a href="#m4"><b>CheckResponseBody</b>  </a></td><td class="numi">1</td><td>1562011228865</td><td class="numi">2</td></tr>
+<tr class="failedodd"><td rowspan="1">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m5"><b>checkServerType</b>  </a></td><td class="numi">1</td><td>1562011223294</td><td class="numi">4</td></tr>
+<tr><th colspan="4">EmployeerestAssuredTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m6"><b>CheckContentEncoding</b>  </a></td><td class="numi">1</td><td>1562011222968</td><td class="numi">22</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_003_POST_Employee_Record</td><td><a href="#m7"><b>CheckContentEncoding</b>  </a></td><td class="numi">1</td><td>1562011228858</td><td class="numi">4</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m8"><b>CheckContentLength</b>  </a></td><td class="numi">1</td><td>1562011223543</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m9"><b>CheckCookies</b>  </a></td><td class="numi">1</td><td>1562011223174</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m10"><b>CheckCookies</b>  </a></td><td class="numi">1</td><td>1562011223546</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="2">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m11"><b>CheckResponseBody</b>  </a></td><td class="numi">1</td><td>1562011223182</td><td class="numi">94</td></tr><tr class="passedeven"><td><a href="#m12"><b>CheckStatusCode</b>  </a></td><td class="numi">1</td><td>1562011223278</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m13"><b>CheckStatusCode</b>  </a></td><td class="numi">1</td><td>1562011223552</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_003_POST_Employee_Record</td><td><a href="#m14"><b>CheckStatusCode</b>  </a></td><td class="numi">1</td><td>1562011228872</td><td class="numi">3</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m15"><b>CheckStatusLine</b>  </a></td><td class="numi">1</td><td>1562011223282</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m16"><b>CheckStatusLine</b>  </a></td><td class="numi">1</td><td>1562011223554</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_003_POST_Employee_Record</td><td><a href="#m17"><b>CheckStatusLine</b>  </a></td><td class="numi">1</td><td>1562011228879</td><td class="numi">3</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m18"><b>ResponseTime</b>  </a></td><td class="numi">1</td><td>1562011223286</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m19"><b>ResponseTime</b>  </a></td><td class="numi">1</td><td>1562011223557</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_001_GET_All_Employees</td><td><a href="#m20"><b>checkContentType</b>  </a></td><td class="numi">1</td><td>1562011223289</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m21"><b>checkContentType</b>  </a></td><td class="numi">1</td><td>1562011223559</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_003_POST_Employee_Record</td><td><a href="#m22"><b>checkContentType</b>  </a></td><td class="numi">1</td><td>1562011228884</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record</td><td><a href="#m23"><b>checkServerType</b>  </a></td><td class="numi">1</td><td>1562011223560</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">com.Employeeapi.testCases.TC_003_POST_Employee_Record</td><td><a href="#m24"><b>checkServerType</b>  </a></td><td class="numi">1</td><td>1562011228887</td><td class="numi">1</td></tr>
+</table>
+<h1>EmployeerestAssuredTest</h1>
+<h2 id="m1">com.Employeeapi.testCases.TC_001_GET_All_Employees:checkServerType</h2>
+<div style="padding-left:3em">
+<p>expected [nginx/1.14.1] but found [Apache]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.Employeeapi.testCases.TC_001_GET_All_Employees.checkServerType(TC_001_GET_All_Employees.java:68)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.Employeeapi.testCases.TC_001_GET_All_Employees:CheckContentLength</h2>
+<div style="padding-left:3em">
+<p>null</p>
+java.lang.Integer.parseInt(Integer.java:542)
+<br/>at java.lang.Integer.parseInt(Integer.java:615)
+<br/>at com.Employeeapi.testCases.TC_001_GET_All_Employees.CheckContentLength(TC_001_GET_All_Employees.java:103)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.Employeeapi.testCases.TC_003_POST_Employee_Record:CheckResponseBody</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at org.testng.Assert.assertEquals(Assert.java:296)
+<br/>at com.Employeeapi.testCases.TC_003_POST_Employee_Record.CheckResponseBody(TC_003_POST_Employee_Record.java:54)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:CheckContentEncoding</h2>
+<div style="padding-left:3em">
+<p>expected [gzip] but found [null]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record.CheckContentEncoding(TC_002_GET_Single_Employee_Record.java:79)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:CheckResponseBody</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at org.testng.Assert.assertEquals(Assert.java:296)
+<br/>at com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record.CheckResponseBody(TC_002_GET_Single_Employee_Record.java:33)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.Employeeapi.testCases.TC_001_GET_All_Employees:CheckStatusLine</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.Employeeapi.testCases.TC_001_GET_All_Employees:checkContentType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:CheckCookies</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:ResponseTime</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:checkContentType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.Employeeapi.testCases.TC_003_POST_Employee_Record:checkContentType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.Employeeapi.testCases.TC_001_GET_All_Employees:CheckStatusCode</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:CheckStatusLine</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.Employeeapi.testCases.TC_001_GET_All_Employees:ResponseTime</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:CheckStatusCode</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.Employeeapi.testCases.TC_003_POST_Employee_Record:CheckContentEncoding</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.Employeeapi.testCases.TC_001_GET_All_Employees:CheckResponseBody</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.Employeeapi.testCases.TC_001_GET_All_Employees:CheckCookies</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.Employeeapi.testCases.TC_003_POST_Employee_Record:checkServerType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:CheckContentLength</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.Employeeapi.testCases.TC_001_GET_All_Employees:CheckContentEncoding</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.Employeeapi.testCases.TC_002_GET_Single_Employee_Record:checkServerType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.Employeeapi.testCases.TC_003_POST_Employee_Record:CheckStatusCode</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.Employeeapi.testCases.TC_003_POST_Employee_Record:CheckStatusLine</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
