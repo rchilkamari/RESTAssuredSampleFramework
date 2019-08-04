@@ -20,6 +20,7 @@ public class TC_001_GET_All_Employees extends TestBase {
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
 		httpRequest = RestAssured.given();
 		response = RestAssured.request(Method.GET, "/employees");
+		logger.info("****All Employees collected*************");
 
 	}
 
