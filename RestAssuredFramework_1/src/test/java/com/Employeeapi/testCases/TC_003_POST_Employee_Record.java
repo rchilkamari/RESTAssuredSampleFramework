@@ -81,6 +81,11 @@ public class TC_003_POST_Employee_Record extends TestBase {
 		}
 
 		@Test
+		
+		/**
+		 * Validate Server Type
+		 * 
+		 */
 
 		public void checkServerType() {
 
